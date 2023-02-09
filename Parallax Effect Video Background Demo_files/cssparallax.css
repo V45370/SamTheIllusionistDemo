@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Image Parallax Section*/
+
+.ParallaxImage {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.ParallaxImage h1 {
+  text-align: center;
+}
+.ParallaxImage h3 {
+  font-weight: 700;
+  font-size: 76px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.portrait-container{
+  text-align: center;
+  position: relative;
+}
+
+.another-container{
+  width: 150px;
+  display: inline;
+  position: absolute;
+  
+}
+
+img {  
+  align-items: center;
+  /* background-color: #423d3d;
+  border: 5px solid #423d3d;
+  border-radius: 50%; */
+  color: #423d3d;
+  display: flex;
+  font-size: 40pt !important;
+  justify-content: center;
+  /* position: relative; */
+  /* right: 50px; */
+  display: inline;
+  position: absolute;
+  top:-75px;
+  left:-60px;
+  /* left:50px; */
+
+  
+  /* width: 90px;
+  height: 150px; */
+  z-index: 4;
+  border-radius: 50%;
+  max-width: 100%;
+  width: 150px;
+  /* top: 0; */
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+/* .logo img{
+  border-radius: 50%;
+  max-width: 100%;
+  width: 150px;
+}
+
+.logo a{
+  border: 0;
+  height: 150px;
+  width: 150px;
+} */
+
+.bg1 {
+  background-image: url("../images/paxallax1.jpg");
+}
+.bg2 {
+  background-image: url("../images/paxallax2.jpg");
+}
+.bg3 {
+  background-image: url("../images/paxallax3.jpg");
+}
+
+/* Content Parallax Section*/
+.ParallaxContent {
+  background: none repeat scroll 0 0 #423d3d;
+  padding: 42px 0;
+  color: #fff;
+}
+.ParallaxContent h3 {
+  color: #fff;
+  text-align: center;
+}
+
+/* Video Parallax Section*/
+.ParallaxVideo {
+  height: 300px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.ParallaxVideo video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -9999;
+}
+.ParallaxVideo h3 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* General Section*/
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.headlines h2 {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+.headlines p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  color: #f6f3f3;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+}
