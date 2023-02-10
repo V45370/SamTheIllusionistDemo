@@ -44,7 +44,7 @@
   
 }
 
-img {  
+.logo {  
   align-items: center;
   /* background-color: #423d3d;
   border: 5px solid #423d3d;
@@ -73,6 +73,30 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
+
+.grid{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto;
+
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+}
+.books-content{
+  text-align:center;
+}
+
+
+.book-img{
+  width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* .logo img{
   border-radius: 50%;
   max-width: 100%;
@@ -85,7 +109,7 @@ img {
   width: 150px;
 } */
 
-.bg1 {
+/* .bg1 {
   background-image: url("../images/paxallax1.jpg");
 }
 .bg2 {
@@ -93,7 +117,7 @@ img {
 }
 .bg3 {
   background-image: url("../images/paxallax3.jpg");
-}
+} */
 
 /* Content Parallax Section*/
 .ParallaxContent {
