@@ -26,10 +26,18 @@
 }
 .ParallaxImage h3 {
   font-weight: 700;
-  font-size: 76px;
+  font-size: 58px;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #fce4b2;
+}
+
+.ParallaxImage h4 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fce4b2;
 }
 
 .portrait-container{
@@ -44,7 +52,7 @@
   
 }
 
-.logo {  
+.avatar {  
   align-items: center;
   /* background-color: #423d3d;
   border: 5px solid #423d3d;
@@ -75,27 +83,65 @@
 }
 
 .grid{
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
+  display: flex;
+  grid-template-columns: auto;
   grid-template-rows: auto;
+  flex-wrap: wrap;
 
   box-sizing: border-box;
-  width: 400px;
-  height: 200px;
+  /* width: 400px;
+  height: 200px; */
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: stretch;
+  justify-content: space-evenly;
+  
+  
 
-  background: rgba(114, 186, 94, 0.05);
-  border: 2px dashed rgba(114, 186, 94, 0.35);
+  /* background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35); */
+}
+
+.grid-item {
+  box-sizing: border-box;
+  /* width: 242px;
+  height: 153px; */
+  margin: 20px;
+  
+  /* background: rgba(255, 213, 70, 0.4);
+  border: 2px dashed rgba(236, 198, 48, 0.5); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.book{
+  width: 400px;
+  padding: 20px;
 }
 .books-content{
+  /* max-width: 400px; */
   text-align:center;
 }
 
 
 .book-img{
-  width: 150px;
+  width: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book-description{
+  max-width: 400px;;
+}
+
+.support-icon{
+  width: 40px;
+}
+
+.support-me-container{
+  text-align: center;
+  margin: 20px;
 }
 /* .logo img{
   border-radius: 50%;
