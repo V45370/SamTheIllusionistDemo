@@ -1,21 +1,5 @@
-/*
-Author URI: http://Codeconvey.com/
-Version: 1.0
-*/
-
-
-/* ----------------------------------------------------
-	GOOGLE FONTS
--------------------------------------------------------
-font-family: 'Raleway', sans-serif;
-font-family: 'Lato', Arial, sans-serif;
-font-family: "PT Sans",sans-serif;
-------------------------------------------------------- */
-	
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-
 
 @font-face {
   font-family: 'FontAwesome';
@@ -45,7 +29,7 @@ font-family: "PT Sans",sans-serif;
 	SKELETON
 ------------------------------------------------------- */
 body {
-	background:#423d3d;;
+	background:#35383E;;
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
@@ -226,14 +210,14 @@ section{ float:left; width:100%;}
 
 .avatar {  
   align-items: center;
-  color: #423d3d;
+  color: #35383E;
   display: flex;
   font-size: 40pt !important;
   justify-content: center;
   display: inline;
   position: absolute;
   top:-75px;
-  left:-60px;
+  left:-80px;
   z-index: 4;
   border-radius: 50%;
   max-width: 100%;
@@ -292,7 +276,7 @@ section{ float:left; width:100%;}
 }
 /* Content Parallax Section*/
 .content {
-  background: none repeat scroll 0 0 #423d3d;
+  background: none repeat scroll 0 0 #35383E;
   padding: 42px 0;
   color: #fff;
 }
@@ -302,6 +286,14 @@ section{ float:left; width:100%;}
 }
 
 /* Video Parallax Section*/
+.youtube{
+  margin: 20px 20px 0px 20px;
+}
+
+.title{
+  width: 360px;
+}
+
 .video {
   height: 300px;
   padding-bottom: 50px;

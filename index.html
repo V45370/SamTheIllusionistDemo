@@ -12,7 +12,7 @@
     <div class="video">
       <video autoplay="" muted="" loop="">
         <source
-          src="./files/star-nest-slow-720p-crf51.webm"
+          src="./files/star-nest-720p-fadein-fade-out.webm"
           type="video/webm"
         />
       </video>
@@ -85,7 +85,7 @@
         <div class="content">
           <div class="container">
             <div class="headlines">
-              <h2>My Channeling Sessions</h2>
+              <h2>My Latest Videos</h2>
             </div>
             <p>
               Nunc a metus eget erat varius volutpat. Etiam condimentum
@@ -97,48 +97,50 @@
               pharetra.
             </p>
             <div class="youtube-container grid">
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/nzqWAAasXlY"
-              >
-              </iframe>
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/NEm1hr2soTw"
-              >
-              </iframe>
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/Sdu9sLZmeSs"
-              >
-              </iframe>
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/u2ZB9ggbWdU"
-              >
-              </iframe>
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/u2ZB9ggbWdU"
-              >
-              </iframe>
-              <iframe
-                class="grid-item"
-                width="320"
-                height="180"
-                src="https://www.youtube.com/embed/u2ZB9ggbWdU"
-              >
-              </iframe>
+              <div class="grid-item">
+                <iframe
+                  vnum="0"
+                  class="youtube"
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=UCqjuKkHu1gTHiKkkgQ9baRQ"
+                >
+                </iframe>
+                <h3 class="title">Title</h3>
+              </div>
+              <div class="grid-item">
+                <iframe
+                  vnum="1"
+                  class="youtube"
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=UCqjuKkHu1gTHiKkkgQ9baRQ"
+                >
+                </iframe>
+                <h3 class="title">Title</h3>
+              </div>
+              <div class="grid-item">
+                <iframe
+                  vnum="2"
+                  class="youtube"
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=UCqjuKkHu1gTHiKkkgQ9baRQ"
+                >
+                </iframe>
+                <h3 class="title">Title</h3>
+              </div>
+              <div class="grid-item">
+                <iframe
+                  vnum="3"
+                  class="youtube"
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=UCqjuKkHu1gTHiKkkgQ9baRQ"
+                >
+                </iframe>
+                <h3 class="title">Title</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -219,12 +221,7 @@
             <div class="headlines">
               <h2>Support Me</h2>
             </div>
-            <p>
-              Subscribe to my Youtube channel for upcoming sessions. Join me on
-              Patreon where I publish even more sessions and we can meditate
-              together. You can also follow me on Instagram. Donations are not
-              expected but highly appreciated!
-            </p>
+            
             <div class="grid">
               <div class="grid-item">
                 <div class="support-me-container">
@@ -234,8 +231,8 @@
                       src="./files/patreon-icon-transparent.png"
                       alt="Patreon"
                     />
-                    <p>Patreon</p>
                   </a>
+                  <p>Patreon</p>
                 </div>
               </div>
               <div class="grid-item">
@@ -246,8 +243,8 @@
                       src="./files/paypal-icon-transparent.png"
                       alt="PayPal"
                     />
-                    <p>PayPal</p>
                   </a>
+                  <p>PayPal</p>
                 </div>
               </div>
               <div class="grid-item">
@@ -258,8 +255,8 @@
                       src="./files/youtube-icon-transparent.png"
                       alt="Youtube"
                     />
-                    <p>Youtube</p>
                   </a>
+                  <p>Youtube</p>
                 </div>
               </div>
               <div class="grid-item">
@@ -270,13 +267,16 @@
                       src="./files/insta-icon-transparent.png"
                       alt="Instagram"
                     />
-                    <p>Instagram</p>
                   </a>
+                  <p>Instagram</p>
                 </div>
               </div>
             </div>
             <p>
-              You can email me on samtheillusionist1@gmail.com for your soul
+              Subscribe to my Youtube channel for upcoming sessions. Join me on
+              Patreon where I publish even more sessions and we can meditate
+              together. You can also follow me on Instagram. Donations are not
+              expected but highly appreciated! You can contact me on samtheillusionist1@gmail.com for your soul
               identity, soul name and past lives.
             </p>
           </div>
@@ -284,4 +284,50 @@
       </div>
     </div>
   </body>
+  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        const requestOptions = {
+          method: "GET",
+          redirect: "follow",
+        };
+
+        const loadVideo = (iframe, title) => {
+          const cid = "UCqjuKkHu1gTHiKkkgQ9baRQ";
+          const channelURL = encodeURIComponent(
+            `https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`
+          );
+          const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${channelURL}`;
+          fetch(reqURL, requestOptions)
+            .then((response) => response.json())
+            .then((result) => {
+              const videoNumber = iframe.getAttribute("vnum")
+                ? Number(iframe.getAttribute("vnum"))
+                : 0;
+              const link = result.items[videoNumber].link;
+              const titleText = result.items[videoNumber].title;
+              const id = link.substr(link.indexOf("=") + 1);
+              iframe.setAttribute(
+                "src",
+                `https://youtube.com/embed/${id}?controls=0&autoplay=1`
+              );
+              title.innerText = htmlDecode(titleText);
+            })
+            .catch((error) => console.log("error", error));
+        };
+        var iframes = document.getElementsByClassName("youtube");
+        var titles = document.getElementsByClassName("title");
+        for (var i = 0, len = iframes.length; i < len; i++) {
+          loadVideo(iframes[i], titles[i]);
+        }
+      },
+      false
+    );
+
+    function htmlDecode(input) {
+      var doc = new DOMParser().parseFromString(input, "text/html");
+      return doc.documentElement.textContent;
+    }
+  </script>
 </html>
